@@ -1,0 +1,207 @@
+V "GNAT Lib v4.9"
+A -O2
+P ZX
+
+RN
+RV NO_IO
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U data%b		data.adb		73fe0bd9 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.long_integer_text_io%s  a-liteio.ads	a-liteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+W system.multiprocessors%s  s-multip.adb	s-multip.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+U data%s		data.ads		426204f5 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.long_integer_text_io%s  a-liteio.ads	a-liteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.multiprocessors%s  s-multip.adb	s-multip.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-liteio.ads		20070406091342 09572056
+D a-numeri.ads		20080324174807 bb51c45a
+D a-nudira.ads		20100622172941 2fef2912
+D a-nudira.adb		20100622172941 e57ce22b
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D data.ads		20191007222732 641b6716
+D data.adb		20191007222908 0930905f
+D interfac.ads		20140225151838 69adb1b9
+D i-cstrea.ads		20130412125801 8128536b
+D system.ads		20160213141829 90249111
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-multip.ads		20101011073009 38ac9f73
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-rannum.ads		20140124162202 5eb33f0a
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-wchcon.ads		20140225151139 1b7d22d2
+X 1 ada.ads
+16K9*Ada 19e8 14|1r6 1r19 1r69 2r5 2r18 15|2r6 2r19 3r5 3r18 4r6 10r29
+X 5 a-liteio.ads
+18K13*Long_Integer_Text_IO[12|45] 14|1w23 2r22 15|2w23 3r22
+X 6 a-numeri.ads
+16K13*Numerics 32e17 14|1r73 15|4r10 10r33
+X 7 a-nudira.ads
+44k22*Discrete_Random 73e33 14|1w82 15|4w19 10r42
+48R9 Generator<27|58R9> 15|13r18[10]
+50V13 Random{15|8I9} 15|37s55[10] 46s67[10]
+53U14 Reset<27|95p14> 15|36s34[10] 45s42[10]
+X 11 a-textio.ads
+49K13*Text_IO 471e16 14|1w10 2r9 15|2w10 3r9
+166U14*New_Line 15|212s17 221s25
+263U14*Put_Line 15|244s25 246s25 251s25 253s25 258s25 260s25
+X 12 a-tiinio.ads
+55U14*Get 15|18s25[5|18] 26s33[5|18]
+65U14*Put 15|210s25[5|18] 219s33[5|18]
+X 14 data.ads
+5i9 N{long_integer} 28r33 29r33 29r39 15|17r29 24r29 25r37 35r29 43r29 44r37
+. 56r29 57r37 59r45 73r29 75r37 88r29 89r37 102r29 114r29 115r37 129r29 144r29
+. 145r37 161r29 176r29 177r37 194r29 195r37 209r29 217r29 218r37
+6k9*Data 5z9 28E14 30l5 30e9 15|7b14 268l5 268t9
+7A14*Vector(long_integer) 10r38 12r41 15r47 15r77 17r39 17r54 19r35 21r35
+. 23r36 23r51 24r38 26r32 26r46 26r82 26r140 26r173 28c14 15|15r38 32r41
+. 68r47 68r77 70r22 97r39 97r54 99r22 123r35 155r35 187r36 187r51 189r22
+. 207r38 225r32 225r46 225r82 225r140 225r173
+8A14*Matrix(long_integer) 11r39 13r43 14r47 14r62 15r62 16r68 16r83 18r42
+. 18r57 20r36 22r36 25r39 26r65 26r98 26r125 26r159 26r188 29c14 15|22r39
+. 41r42 51r47 51r62 53r22 68r62 83r68 83r83 85r22 109r42 109r57 111r22 138r36
+. 170r36 215r39 225r65 225r98 225r125 225r159 225r188
+10U19*Read_Vector 10<31 15|15b19 20l13 20t24
+10a31 A{7A14} 15|15b31 18m29 18r29
+11U19*Read_Matrix 11<31 15|22b19 29l13 29t24
+11a31 MA{8A14} 15|22b31 26m37 26r37
+12U19*Fill_Vector 12=31 15|32b19 39l13 39t24
+12a31 A{7A14} 15|32b31 37m25
+13U19*Fill_Matrix 13=31 15|41b19 49l13 49t24
+13a31 MA{8A14} 15|41b31 46m33
+14V18*Multiply_Matrices{8A14} 14>36 14>40 15|51b18 66l13 66t30 245s68 252s127
+. 259s68
+14a36 MA{8A14} 15|51b36 60r66
+14a40 MB{8A14} 15|51b40 60r77
+15V18*Multiply_Vector_Matrix{7A14} 15>41 15>55 15|68b18 81l13 81t35 245s42
+. 259s42 259s96
+15a41 A{7A14} 15|68b41 76r63
+15a55 MB{8A14} 15|68b55 76r52
+16V18*Multiply_Scalar_Matrix{8A14} 16>41 16>61 15|83b18 95l13 95t35 252s44
+. 252s88
+16i41 A{long_integer} 15|83b41 90r46
+16a61 MB{8A14} 15|83b61 90r50
+17V18*Sum_Vectors{7A14} 17>30 17>33 15|97b18 107l13 107t24 245s30 245s96
+. 259s30
+17a30 A{7A14} 15|97b30 103r35
+17a33 B{7A14} 15|97b33 103r42
+18V18*Sum_Matrices{8A14} 18>31 18>35 15|109b18 121l13 121t25 252s31
+18a31 MA{8A14} 15|109b31 116r46
+18a35 MB{8A14} 15|109b35 116r57
+19V18*Min_Vector{long_integer} 19>29 15|123b18 136l13 136t23
+19a29 A{7A14} 15|123b29 128r24 130r34 131r40
+20V18*Min_Matrix{long_integer} 20>29 15|138b18 153l13 153t23 252s67
+20a29 MA{8A14} 15|138b29 143r24 146r42 147r48
+21V18*Max_Vector{long_integer} 21>29 15|155b18 168l13 168t23
+21a29 A{7A14} 15|155b29 160r24 162r34 163r40
+22V18*Max_Matrix{long_integer} 22>29 15|170b18 185l13 185t23 252s111
+22a29 MA{8A14} 15|170b29 175r24 178r42 179r48
+23V18*Sort_Vector{7A14} 23>30 15|187b18 205l13 205t24 259s119
+23a30 A{7A14} 15|187b30 193r24
+24U19*Print_Vector 24>32 15|207b19 213l13 213t25
+24a32 A{7A14} 15|207b32 210r29
+25U19*Print_Matrix 25>32 15|215b19 223l13 223t25
+25a32 MA{8A14} 15|215b32 219r37
+26U19*Funcs 26<25 26>40 26>54 26>58 26>73 26>76 26<90 26>106 26>110 26>114
+. 26>118 26<133 26>148 26>152 26>167 26>181 15|225b19 265l13 265t18
+26a25 C{7A14} 15|225b25 245m25
+26a40 A{7A14} 15|225b40 245r65
+26a54 MA{8A14} 15|225b54 245r86
+26a58 ME{8A14} 15|225b58 245r90
+26a73 B{7A14} 15|225b73 245r108
+26a76 D{7A14} 15|225b76 245r111
+26a90 ML{8A14} 15|225b90 252m25
+26a106 MF{8A14} 15|225b106 252r78 252r149
+26a110 MG{8A14} 15|225b110 252r83
+26a114 MH{8A14} 15|225b114 252r122
+26a118 MK{8A14} 15|225b118 252r145
+26a133 T{7A14} 15|225b133 259m25
+26a148 MO{8A14} 15|225b148 259r86
+26a152 MP{8A14} 15|225b152 259r90
+26a167 S{7A14} 15|225b167 259r65 259r131
+26a181 MR{8A14} 15|225b181 259r135
+X 15 data.adb
+8I9 Rand_Value<short_short_integer> 10r58
+10K12 Rand_Int[7|44] 11r8 13r9 36r25 37r46 45r33 46r58
+13r4 gen{7|48R9[10]} 36r40 37r62 45r48 46r74
+17i21 i{long_integer} 18r31
+24i21 i{long_integer} 26r40
+25i29 k{long_integer} 26r43
+35i21 i{long_integer} 37r27
+43i21 i{long_integer} 46r36
+44i29 k{long_integer} 46r39
+53a17 res{14|8A14} 58m33 60m41 60r54 65r24
+56i21 i{long_integer} 58r37 60r45 60r58 60r69
+57i29 k{long_integer} 58r40 60r48 60r61 60r83
+59i37 j{long_integer} 60r72 60r80
+70a17 res{14|7A14} 74m25 76m33 76r43 80r24
+73i21 i{long_integer} 74r29 76r37 76r47 76r55
+75i29 j{long_integer} 76r58 76r65
+85a17 res{14|8A14} 90m33 94r24
+88i21 i{long_integer} 90r37 90r53
+89i29 k{long_integer} 90r40 90r56
+99a17 res{14|7A14} 103m25 106r24
+102i21 i{long_integer} 103r29 103r37 103r44
+111a17 res{14|8A14} 116m33 120r24
+114i21 i{long_integer} 116r37 116r49 116r60
+115i29 k{long_integer} 116r40 116r52 116r63
+125i9 res{long_integer} 128m17 130r28 131m33 135r24
+129i21 i{long_integer} 130r36 131r42
+140i17 res{long_integer} 143m17 146r36 147m41 152r24
+144i21 i{long_integer} 146r45 147r51
+145i29 k{long_integer} 146r48 147r54
+157i9 res{long_integer} 160m17 162r28 163m33 167r24
+161i21 i{long_integer} 162r36 163r42
+172i17 res{long_integer} 175m17 178r36 179m41 184r24
+176i21 i{long_integer} 178r45 179r51
+177i29 k{long_integer} 178r48 179r54
+189a17 res{14|7A14} 193m17 196r36 196r45 197r46 198m41 198r51 199m41 204r24
+190i17 t{long_integer} 197m41 199r55
+194i21 i{long_integer} 195r39 196r40 196r49 197r50 198r45 198r55 199r45
+195i29 k{long_integer}
+209i21 i{long_integer} 210r31
+217i21 i{long_integer} 219r40
+218i29 k{long_integer} 219r43
+227t22 Func1 242b27 247l21 247t26
+232t22 Func2 249b27 254l21 254t26
+237t22 Func3 256b27 261l21 261t26
+X 18 system.ads
+37K9*System 14|1r45 2r44 18|152e11
+X 24 s-multip.ads
+16K16*Multiprocessors 14|1w52 2r51 24|28e27
+X 27 s-rannum.ads
+58R9*Generator
+

@@ -1,4 +1,16 @@
+
+with Ada.Text_IO, Ada.Long_Integer_Text_IO;
+use Ada.Text_IO, Ada.Long_Integer_Text_IO;
+with Ada.Numerics.Discrete_Random;
+
+
 package body Data is
+   type Rand_Value is range 1..20;
+
+   package Rand_Int is new  Ada.Numerics.Discrete_Random(Rand_Value);
+   use Rand_Int;
+
+   gen: Rand_Int.Generator;
 
 	procedure Read_Vector(A: out Vector) is
 	begin
@@ -16,34 +28,22 @@ package body Data is
 		end loop;
 	end Read_Matrix;
 
+	
 	procedure Fill_Vector(A: in out Vector) is
-
-		subtype r is range 1..20;
-		package Random is new Ada.Numerics.Discrete_Random(r);
-		use Random;
-		G: Generator;
-		D: Dice;
-
 	begin
-		Reset(G);
+		
 		for i in 1..N loop
-			A(i) := Random(G);
+			Rand_Int.Reset(gen);
+			A(i) := Long_Integer(Rand_Int.Random(gen));
 		end loop;
 	end Fill_Vector;
 
 	procedure Fill_Matrix(MA: in out Matrix) is
-
-		subtype r is range 1..20;
-		package Random is new Ada.Numerics.Discrete_Random(r);
-		use Random;
-		G: Generator;
-		D: Dice;
-
 	begin
-		Reset(G);
 		for i in 1..N loop
 			for k in 1..N loop
-				MA(i, k) := Random(G);
+				Rand_Int.Reset(gen);
+				MA(i, k) := Long_Integer(Rand_Int.Random(gen));
 			end loop;
 		end loop;
 	end Fill_Matrix;

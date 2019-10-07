@@ -3,7 +3,7 @@ use Ada.Text_IO, Ada.Integer_Text_IO;
 
 procedure Lab1 is
 
-	N: Integer := 1000;
+	N: Long_Integer := 1000;
 
 	package ConcreteData is new Data(N);
 	use ConcreteData;
@@ -13,7 +13,7 @@ procedure Lab1 is
 	
 begin
 	Put_Line("Enter vector A:");
-	ConcreteData.Fill_Vector(A);
+	Fill_Vector(A);
 
 	Put_Line("Enter vector B:");
 	Fill_Vector(B);
